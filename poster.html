@@ -137,7 +137,7 @@
   .status.officials { color: #244d78; background: #dfe9f3; }
   .lead h2 { font-family: "Playfair Display", Georgia, serif; font-size: 20.5px; font-weight: 700; line-height: 1.02; letter-spacing: -.3px; margin: 0 0 3px; }
   .lead p { font-size: 11.5px; font-weight: 600; line-height: 1.22; margin: 0 0 2px; color: #2a251f; }
-  .src { font-size: 10.5px; font-style: italic; font-weight: 600; line-height: 12px; color: var(--muted); margin-top: auto; }
+  .src { font-size: 10.5px; font-style: italic; font-weight: 700; line-height: 12px; color: #352f27; margin-top: auto; }
 
   .cards { display: grid; grid-template-columns: repeat(4, 1fr); grid-template-rows: repeat(2, 1fr); gap: 8px; }
   .card { border: 1px solid var(--rule); background: rgba(255,251,242,.9); display: grid; grid-template-rows: 34px 1fr; overflow: hidden; }
@@ -187,7 +187,7 @@
   .panel { border-top: 2px solid var(--ink); padding-top: 3px; overflow: hidden; min-width: 0; }
   .panel-head { display: flex; align-items: center; gap: 8px; font-family: "Playfair Display", Georgia, serif; font-size: 15px; font-weight: 700; line-height: 18px; margin-bottom: 3px; white-space: nowrap; min-width: 0; }
   .panel-head::after { content: ""; flex: 1; height: 3px; background: var(--red); }
-  .panel-head span { font-family: "Oswald", sans-serif; font-size: 10.5px; font-weight: 700; letter-spacing: .5px; color: var(--muted); }
+  .panel-head span { font-family: "Oswald", sans-serif; font-size: 10.5px; font-weight: 700; letter-spacing: .5px; color: #352f27; }
   .map-wrap { width: 100%; height: 210px; background: rgba(255,251,242,.55); overflow: hidden; }
   .map-wrap svg { display: block; width: 100%; height: 100%; }
   .land { fill: #e6dcc8; stroke: #b9a98e; stroke-width: 1.1; }
@@ -203,9 +203,9 @@
     gap: 5px;
     font-family: "Roboto Condensed", "Source Sans 3", sans-serif;
     font-size: 10.6px;
-    font-weight: 600;
+    font-weight: 700;
     line-height: 13.1px;
-    color: #2a251f;
+    color: #201c17;
     margin-bottom: 1px;
     white-space: nowrap;
     overflow: hidden;
@@ -223,7 +223,7 @@
     font-weight: 700;
     letter-spacing: 0;
     white-space: nowrap;
-    color: var(--muted);
+    color: #352f27;
     overflow: hidden;
   }
   .sources b { font-family: "Oswald", sans-serif; letter-spacing: .6px; color: #8c171c; }
@@ -240,11 +240,11 @@
         <span class="edition">SUNDAY EDITION · 36 STORIES · 6 REGIONS</span>
       </div>
       <div class="date">Sunday 22 November 2026</div>
-      <div class="deck">COP31 draft unadopted · 186 drones over Ukraine · F-16 claim denied · 720/9 in NZ</div>
+      <div class="deck">COP31 plenary, no deal yet · 186 drones over Ukraine · F-16 claim denied · 720/9 in NZ</div>
     </div>
     <aside class="datecheck">
       <h2>DATE CHECK · UTC</h2>
-      <p>Wires read to about 09:30–10:00 UTC, Sunday 22 November 2026. Left out on purpose as not 22 November news: Maluku M7.2 quake (Sat 21), Bahrain industrial-site strike (Sat evening), Kryvyi Rih missile strike (Sat).</p>
+      <p>Wires read to about 10:15 UTC, Sunday 22 November 2026. Left out as not 22 November news: Maluku M7.2 quake (Sat 21), Bahrain industrial-site strike (Sat evening), Kryvyi Rih missile strike (Sat). NBA line is Saturday night US time, reported Sunday.</p>
     </aside>
   </header>
 
@@ -259,11 +259,12 @@
 
   <section class="timeline" aria-label="The day in UTC">
     <span class="title">THE DAY IN UTC</span>
-    <span><b>00:00 UTC</b> COP draft at 3 a.m. Antalya</span>
+    <span><b>00:00</b> draft at 3 a.m. Antalya</span>
     <span><b>~05:30</b> Las Vegas GP ends</span>
-    <span><b>08:00</b> HK: 97.4% by 4pm local</span>
-    <span><b>08:52</b> COP31 closes; floor only</span>
-    <span><b>~10:00</b> wires cut-off</span>
+    <span><b>08:00</b> HK: 97.4% by 4pm</span>
+    <span><b>10:06</b> COP plenary opens</span>
+    <span><b>10:09</b> fresh draft out</span>
+    <span><b>~10:15</b> wires cut-off</span>
   </section>
 
   <section class="leads">
@@ -271,77 +272,87 @@
       <div class="lead-art">
         <svg viewBox="0 0 320 94" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
           <defs>
-            <linearGradient id="c31-wall" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="0" stop-color="#123a45"/>
-              <stop offset=".62" stop-color="#2a6a67"/>
-              <stop offset="1" stop-color="#0e3034"/>
+            <linearGradient id="c31-dusk" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#182b49"/>
+              <stop offset=".42" stop-color="#6a4a6b"/>
+              <stop offset=".74" stop-color="#e08a54"/>
+              <stop offset="1" stop-color="#f7c985"/>
             </linearGradient>
-            <radialGradient id="c31-glow" cx=".52" cy=".5" r=".58">
-              <stop offset="0" stop-color="#ffd68d" stop-opacity=".78"/>
-              <stop offset="1" stop-color="#ffd68d" stop-opacity="0"/>
+            <linearGradient id="c31-hall" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#12323d"/>
+              <stop offset="1" stop-color="#061a22"/>
+            </linearGradient>
+            <linearGradient id="c31-floor" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#31575a"/>
+              <stop offset="1" stop-color="#0a2026"/>
+            </linearGradient>
+            <radialGradient id="c31-lamp" cx=".5" cy=".35" r=".7">
+              <stop offset="0" stop-color="#ffdc9c" stop-opacity=".85"/>
+              <stop offset="1" stop-color="#ffdc9c" stop-opacity="0"/>
             </radialGradient>
-            <linearGradient id="c31-desk" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="0" stop-color="#d6a869"/>
-              <stop offset="1" stop-color="#6c4325"/>
-            </linearGradient>
             <pattern id="c31-grain" width="7" height="7" patternUnits="userSpaceOnUse">
-              <circle cx="1.4" cy="1.6" r=".8" fill="#f8e5bd" opacity=".18"/>
-              <circle cx="5.2" cy="5" r=".7" fill="#05262a" opacity=".2"/>
+              <circle cx="1.3" cy="1.4" r=".8" fill="#ffe8c0" opacity=".14"/>
+              <circle cx="5.1" cy="4.8" r=".7" fill="#03171d" opacity=".2"/>
             </pattern>
+            <clipPath id="c31-win"><path d="M126 72V44a34 34 0 0 1 68 0v28z"/></clipPath>
           </defs>
-          <rect width="320" height="94" fill="url(#c31-wall)"/>
-          <rect width="320" height="94" fill="url(#c31-grain)"/>
-          <ellipse cx="164" cy="55" rx="124" ry="47" fill="url(#c31-glow)"/>
-          <g fill="#f1c47d" opacity=".88">
-            <path d="M22 70V47a19 19 0 0 1 38 0v23z"/>
-            <path d="M82 70V47a19 19 0 0 1 38 0v23z"/>
-            <path d="M202 70V47a19 19 0 0 1 38 0v23z"/>
-            <path d="M262 70V47a19 19 0 0 1 38 0v23z"/>
+          <rect width="320" height="94" fill="url(#c31-dusk)"/>
+          <path d="M0 61q38-13 76-3t76-4 76 4 92-6v16H0z" fill="#3a5363" opacity=".85"/>
+          <rect y="24" width="320" height="70" fill="url(#c31-hall)"/>
+          <g fill="url(#c31-dusk)">
+            <path d="M12 72V44a34 34 0 0 1 68 0v28z"/>
+            <path d="M126 72V44a34 34 0 0 1 68 0v28z"/>
+            <path d="M240 72V44a34 34 0 0 1 68 0v28z"/>
           </g>
-          <g fill="none" stroke="#0c2d32" stroke-width="2" opacity=".95">
-            <path d="M22 70V47a19 19 0 0 1 38 0v23zM82 70V47a19 19 0 0 1 38 0v23zM202 70V47a19 19 0 0 1 38 0v23zM262 70V47a19 19 0 0 1 38 0v23z"/>
-            <path d="M41 29v41M101 29v41M221 29v41M281 29v41M22 57h38M82 57h38M202 57h38M262 57h38"/>
+          <g clip-path="url(#c31-win)">
+            <circle cx="160" cy="58" r="25" fill="#ffcf88" opacity=".35"/>
+            <circle cx="160" cy="58" r="12" fill="#ffe7b5" opacity=".85"/>
           </g>
-          <g fill="#2c7070" opacity=".9">
-            <path d="M22 65q10-7 19-2t19-3v10H22zM82 65q10-7 19-2t19-3v10H82zM202 65q10-7 19-2t19-3v10h-38zM262 65q10-7 19-2t19-3v10h-38z"/>
+          <g fill="#296b72">
+            <path d="M12 64q17-7 34-2t34-2v12H12zM126 64q17-7 34-2t34-2v12h-68zM240 64q17-7 34-2t34-2v12h-68z"/>
           </g>
-          <g fill="none" stroke-linecap="round" opacity=".4">
-            <path d="M-6 42q38-12 76-3" stroke="#f6d79c" stroke-width="4"/>
-            <path d="M244 36q42-10 82 2" stroke="#8fc2b6" stroke-width="5"/>
+          <g fill="none" stroke="#f0b078" stroke-width="1.2" opacity=".8">
+            <path d="M12 58q17 5 34 0t34 2M126 58q17 5 34 0t34 2M240 58q17 5 34 0t34 2"/>
           </g>
-          <rect x="120" y="29" width="80" height="36" rx="2" fill="#e9d8b4" stroke="#0b2b2f" stroke-width="2"/>
-          <rect x="124" y="33" width="72" height="28" fill="#f7ecd2"/>
-          <text x="160" y="46" fill="#8d3227" font-size="13" font-weight="700" text-anchor="middle">1.5°C</text>
-          <path d="M130 52h60" stroke="#a71f24" stroke-width="2.6"/>
-          <path d="M130 57h42" stroke="#5c5449" stroke-width="2"/>
-          <g stroke="#0c2d32" stroke-width="1.8" fill="#dcd0b4">
-            <path d="M153 74V61l9-6"/>
-            <ellipse cx="163" cy="54" rx="4.4" ry="3.2" transform="rotate(-35 163 54)"/>
+          <g fill="none" stroke="#081c23" stroke-width="3">
+            <path d="M12 72V44a34 34 0 0 1 68 0v28M126 72V44a34 34 0 0 1 68 0v28M240 72V44a34 34 0 0 1 68 0v28"/>
           </g>
-          <path d="M0 76q160-11 320 0v18H0z" fill="url(#c31-desk)"/>
-          <path d="M0 76q160-11 320 0" fill="none" stroke="#f4d9a5" stroke-width="1.8" opacity=".85"/>
-          <g fill="#0a282b" opacity=".9">
-            <circle cx="16" cy="68" r="5"/><path d="M7 78q9-9 18 0z"/>
-            <circle cx="38" cy="70" r="4.6"/><path d="M30 79q8-8 16 0z"/>
-            <circle cx="282" cy="68" r="5"/><path d="M273 78q9-9 18 0z"/>
-            <circle cx="304" cy="70" r="4.6"/><path d="M296 79q8-8 16 0z"/>
+          <g stroke="#081c23" stroke-width="2"><path d="M46 26v46M160 26v46M274 26v46"/></g>
+          <g fill="#1a3c44"><rect x="84" y="24" width="10" height="54"/><rect x="226" y="24" width="10" height="54"/><rect x="316" y="24" width="4" height="54"/></g>
+          <ellipse cx="160" cy="38" rx="28" ry="17" fill="url(#c31-lamp)"/>
+          <path d="M160 24v9" stroke="#0a2027" stroke-width="1.5"/>
+          <path d="M144 35q16 9 32 0" fill="none" stroke="#e2b773" stroke-width="1.8"/>
+          <g fill="#ffe1a4"><circle cx="149" cy="36" r="1.8"/><circle cx="160" cy="39" r="2.1"/><circle cx="171" cy="36" r="1.8"/></g>
+          <rect x="232" y="29" width="68" height="14" rx="2" fill="#0b2b33" stroke="#e8b974" stroke-width=".9"/>
+          <text x="266" y="39" fill="#ffe6b0" font-size="10.5" font-weight="700" text-anchor="middle">DRAFT 10:09</text>
+          <path d="M0 78q160-9 320 0v16H0z" fill="url(#c31-floor)"/>
+          <g fill="#06181e">
+            <circle cx="20" cy="68" r="5"/><path d="M10 79q10-9 20 0z"/>
+            <circle cx="42" cy="70" r="4.5"/><path d="M34 80q8-8 16 0z"/>
+            <circle cx="64" cy="69" r="4.8"/><path d="M55 80q9-8 18 0z"/>
+            <circle cx="272" cy="69" r="4.8"/><path d="M263 80q9-8 18 0z"/>
+            <circle cx="296" cy="68" r="5"/><path d="M286 79q10-9 20 0z"/>
           </g>
-          <g transform="translate(196 57)">
-            <ellipse cx="24" cy="24" rx="22" ry="4.5" fill="#072427" opacity=".5"/>
-            <rect x="9" y="17" width="32" height="6" rx="2" fill="#3c2a1b"/>
-            <g transform="rotate(-25 26 11)">
-              <rect x="1" y="7" width="36" height="8" rx="2" fill="#dca85f" stroke="#3c2a1b" stroke-width="1.4"/>
-              <rect x="-5" y="4" width="9" height="14" rx="2" fill="#b77d3d" stroke="#3c2a1b" stroke-width="1.4"/>
-              <rect x="38" y="4" width="9" height="14" rx="2" fill="#b77d3d" stroke="#3c2a1b" stroke-width="1.4"/>
-              <path d="M4 9h30" stroke="#ffe0ac" stroke-width="1.3" opacity=".9"/>
+          <path d="M126 75h68l9 19h-86z" fill="#143740" stroke="#06181e" stroke-width="1.4"/>
+          <path d="M134 71h52v5h-52z" fill="#e8d9b8"/>
+          <path d="M140 73h40" stroke="#a9793f" stroke-width="1"/>
+          <g transform="translate(152 62)">
+            <ellipse cx="15" cy="14" rx="18" ry="4" fill="#04151b" opacity=".5"/>
+            <rect x="3" y="10" width="25" height="5" rx="2" fill="#3f2c1d"/>
+            <g transform="rotate(-27 16 5)">
+              <rect x="-2" y="2" width="30" height="7" rx="2" fill="#dca85f" stroke="#3f2c1d" stroke-width="1.3"/>
+              <rect x="-8" y="-1" width="8" height="13" rx="2" fill="#b77d3d" stroke="#3f2c1d" stroke-width="1.3"/>
+              <rect x="28" y="-1" width="8" height="13" rx="2" fill="#b77d3d" stroke="#3f2c1d" stroke-width="1.3"/>
             </g>
           </g>
-          <g fill="#f5dfae"><rect x="66" y="74" width="15" height="4"/><rect x="92" y="74" width="15" height="4"/><rect x="230" y="74" width="15" height="4"/></g>
+          <g fill="#f4d9a6"><rect x="92" y="80" width="16" height="4"/><rect x="116" y="80" width="16" height="4"/><rect x="212" y="80" width="16" height="4"/></g>
+          <rect width="320" height="94" fill="url(#c31-grain)"/>
           <g>
-            <path d="M6 7h308l-9 9 9 9H6l9-9z" fill="#082326" opacity=".5" transform="translate(0 2)"/>
-            <path d="M6 5h308l-9 9 9 9H6l9-9z" fill="#a71f24"/>
-            <path d="M6 5h308l-9 9 9 9H6l9-9z" fill="none" stroke="#f0c982" stroke-width="1"/>
-            <path d="M15 22h290" stroke="#701419" stroke-width="1.6"/>
+            <path d="M5 7h310l-10 9 10 9H5l10-9z" fill="#061a20" opacity=".55" transform="translate(0 2)"/>
+            <path d="M5 5h310l-10 9 10 9H5l10-9z" fill="#a71f24"/>
+            <path d="M5 5h310l-10 9 10 9H5l10-9z" fill="none" stroke="#f2cd88" stroke-width="1"/>
+            <path d="M14 22h292" stroke="#6d1218" stroke-width="1.6"/>
+            <path d="M12 8q40-4 80 0t80 0 80 0 60 0" fill="none" stroke="#ffd9a0" stroke-width="1" opacity=".35"/>
             <text x="160" y="17.8" fill="#3a0e10" opacity=".6" font-size="16" font-weight="700" text-anchor="middle" letter-spacing="1.1" transform="translate(.7 .7)">THE GAVEL WAITS</text>
             <text x="160" y="17" fill="#fff3d6" font-size="16" font-weight="700" text-anchor="middle" letter-spacing="1.1">THE GAVEL WAITS</text>
           </g>
@@ -349,9 +360,9 @@
       </div>
       <div class="lead-body">
         <div class="kicker"><span class="num">1</span> ANTALYA · CLIMATE <span class="status ongoing">ONGOING</span></div>
-        <h2>COP31's gavel still waits</h2>
-        <p>Antalya Accords draft not adopted by 10:00 UTC; EU weighs rejecting it. Talks closed — changes must be made on the floor (BBC live).</p>
-        <div class="src">BBC · AP · Guardian</div>
+        <h2>COP31 plenary opens</h2>
+        <p>Plenary opened 10:06 GMT; fresh draft 10:09. Kurum: "threshold of a historic decision"; Germany won't accept deal as is; EU still weighing; Bowen: "time will tell" (BBC live).</p>
+        <div class="src">BBC live · AP · Guardian</div>
       </div>
     </article>
 
@@ -360,79 +371,84 @@
         <svg viewBox="0 0 320 94" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
           <defs>
             <linearGradient id="dr-sky" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="0" stop-color="#141e39"/>
-              <stop offset=".58" stop-color="#3c304a"/>
-              <stop offset="1" stop-color="#8c4c36"/>
+              <stop offset="0" stop-color="#0c1630"/>
+              <stop offset=".36" stop-color="#273158"/>
+              <stop offset=".7" stop-color="#5d3b51"/>
+              <stop offset="1" stop-color="#a55a38"/>
             </linearGradient>
-            <radialGradient id="dr-fire" cx=".46" cy=".95" r=".62">
-              <stop offset="0" stop-color="#ffb45c" stop-opacity=".85"/>
+            <radialGradient id="dr-haze" cx=".48" cy=".96" r=".72">
+              <stop offset="0" stop-color="#ffb45c" stop-opacity=".7"/>
               <stop offset="1" stop-color="#ffb45c" stop-opacity="0"/>
             </radialGradient>
+            <radialGradient id="dr-moon" cx=".5" cy=".5" r=".5">
+              <stop offset="0" stop-color="#fff3d0" stop-opacity=".85"/>
+              <stop offset="1" stop-color="#fff3d0" stop-opacity="0"/>
+            </radialGradient>
             <linearGradient id="dr-beam" x1="0" y1="1" x2="0" y2="0">
-              <stop offset="0" stop-color="#ffe3a8" stop-opacity=".5"/>
+              <stop offset="0" stop-color="#ffe3a8" stop-opacity=".42"/>
               <stop offset="1" stop-color="#ffe3a8" stop-opacity="0"/>
             </linearGradient>
+            <linearGradient id="dr-street" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#1a222d"/>
+              <stop offset="1" stop-color="#070c14"/>
+            </linearGradient>
             <pattern id="dr-grain" width="6" height="6" patternUnits="userSpaceOnUse">
-              <circle cx="1" cy="1.3" r=".7" fill="#ffe6bb" opacity=".14"/>
+              <circle cx="1" cy="1.3" r=".7" fill="#ffe6bb" opacity=".16"/>
               <circle cx="4.6" cy="4.4" r=".6" fill="#08101d" opacity=".18"/>
             </pattern>
             <g id="dr-drone">
-              <path d="M-8 0h16M0-7v14" stroke="#0d121b" stroke-width="2.4" stroke-linecap="round"/>
-              <rect x="-3.4" y="-2.8" width="6.8" height="5.6" rx="1.5" fill="#0d121b"/>
+              <path d="M-8 0h16M0-7v14" stroke="#0a0f18" stroke-width="2.4" stroke-linecap="round"/>
+              <rect x="-3.4" y="-2.8" width="6.8" height="5.6" rx="1.5" fill="#0a0f18"/>
               <circle cx="0" cy="0" r="1.3" fill="#ff5c3d"/>
             </g>
           </defs>
           <rect width="320" height="94" fill="url(#dr-sky)"/>
           <rect width="320" height="94" fill="url(#dr-grain)"/>
-          <ellipse cx="150" cy="87" rx="150" ry="52" fill="url(#dr-fire)"/>
-          <path d="M56 94L18 28l13-2 42 68zM266 94l34-64-12-3-46 67z" fill="url(#dr-beam)"/>
-          <g fill="none" stroke-linecap="round" opacity=".32">
+          <circle cx="278" cy="34" r="19" fill="url(#dr-moon)"/>
+          <circle cx="278" cy="34" r="5.6" fill="#f7ecd0" opacity=".85"/>
+          <g fill="#dfe0e8" opacity=".6"><circle cx="30" cy="29" r=".9"/><circle cx="70" cy="26" r=".7"/><circle cx="120" cy="28" r=".8"/><circle cx="166" cy="25" r=".7"/><circle cx="212" cy="30" r=".9"/><circle cx="312" cy="27" r=".8"/></g>
+          <ellipse cx="150" cy="88" rx="160" ry="48" fill="url(#dr-haze)"/>
+          <path d="M0 66h14V52h10v14h8V46h12v20h10V57h14v9h10V48h12v18h8V55h12v11h10V50h14v16h10V44h12v22h10V58h12v8h10V52h14v14h10V47h12v19h10V56h12v10h10V49h14v17h10V54h12v12h10V46h12v20h10V57h14v9h10V50h10v16z" fill="#1b2440" opacity=".72"/>
+          <g fill="#ffd79a" opacity=".65"><rect x="17" y="56" width="3" height="3"/><rect x="67" y="52" width="3" height="3"/><rect x="112" y="59" width="3" height="3"/><rect x="206" y="54" width="3" height="3"/><rect x="252" y="58" width="3" height="3"/></g>
+          <path d="M56 94L18 26l14-2 42 70zM268 94l36-66-13-3-48 69z" fill="url(#dr-beam)"/>
+          <g fill="none" stroke-linecap="round" opacity=".3">
             <path d="M-8 39q34-10 68-1t66-4" stroke="#b09ab4" stroke-width="6"/>
             <path d="M174 34q44-11 88 0t70-4" stroke="#b09ab4" stroke-width="5"/>
-            <path d="M-4 50q30-7 56 0" stroke="#e6bd9a" stroke-width="2.4"/>
           </g>
-          <rect x="24" y="46" width="48" height="42" fill="#1c222d"/>
-          <g fill="#f2c47d" opacity=".9">
-            <rect x="30" y="52" width="8" height="6"/><rect x="44" y="52" width="8" height="6"/><rect x="58" y="52" width="8" height="6"/>
-            <rect x="30" y="64" width="8" height="6"/><rect x="58" y="64" width="8" height="6"/>
-            <rect x="44" y="76" width="8" height="6"/>
+          <rect x="88" y="38" width="84" height="48" fill="#242b38"/>
+          <path d="M134 38l12 9-9 9 13 9-15 9 9 14h-26V38z" fill="#0c1119"/>
+          <g fill="#eec47d" opacity=".88">
+            <rect x="94" y="44" width="10" height="7"/><rect x="110" y="44" width="10" height="7"/><rect x="152" y="44" width="10" height="7"/>
+            <rect x="94" y="57" width="10" height="7"/><rect x="152" y="57" width="10" height="7"/>
+            <rect x="94" y="70" width="10" height="7"/><rect x="110" y="70" width="10" height="7"/><rect x="152" y="70" width="10" height="7"/>
           </g>
-          <path d="M90 40h82v50H90z" fill="#242a35"/>
-          <path d="M136 40l11 9-9 9 13 9-15 9 9 14h-26V40z" fill="#0c1119"/>
-          <g fill="#eec47d" opacity=".86">
-            <rect x="96" y="46" width="10" height="7"/><rect x="112" y="46" width="10" height="7"/><rect x="154" y="46" width="10" height="7"/>
-            <rect x="96" y="59" width="10" height="7"/><rect x="154" y="59" width="10" height="7"/>
-            <rect x="96" y="72" width="10" height="7"/><rect x="112" y="72" width="10" height="7"/><rect x="154" y="72" width="10" height="7"/>
-          </g>
-          <g fill="#6b5c5b" opacity=".72">
-            <circle cx="132" cy="31" r="9"/><circle cx="146" cy="26" r="12"/><circle cx="163" cy="30" r="9"/>
-            <path d="M122 38q22-9 50 0z"/>
-          </g>
-          <path d="M118 86q5-15 13-7t12-5q-4 12 3 12z" fill="#f0752b"/>
-          <path d="M123 86q4-9 8-4t8-2q-2 6 2 6z" fill="#ffd16e"/>
-          <path d="M188 40h14v48h-14zM248 40h14v48h-14z" fill="#1b212b"/>
+          <g fill="#6b5c5b" opacity=".75"><circle cx="130" cy="31" r="9"/><circle cx="145" cy="26" r="12"/><circle cx="162" cy="30" r="9"/><path d="M120 38q22-9 50 0z"/></g>
+          <path d="M116 86q5-15 13-7t12-5q-4 12 3 12z" fill="#f0752b"/>
+          <path d="M121 86q4-9 8-4t8-2q-2 6 2 6z" fill="#ffd16e"/>
+          <path d="M188 40h14v46h-14zM248 40h14v46h-14z" fill="#1b212b"/>
           <path d="M198 52q28-21 56 0v12q-28-19-56 0z" fill="#1b212b"/>
           <path d="M182 84h96" stroke="#141a23" stroke-width="4"/>
           <path d="M226 52v32" stroke="#141a23" stroke-width="3"/>
-          <path d="M282 82V62q12-12 24 0v20" fill="none" stroke="#171d26" stroke-width="3"/>
-          <g fill="none" stroke="#ffd39a" stroke-width="1.3" stroke-dasharray="4 3" opacity=".8">
-            <path d="M40 32q16-9 34-5"/><path d="M232 34q18-8 38-4"/><path d="M272 56q14-4 24 2"/>
-          </g>
-          <use href="#dr-drone" transform="translate(57 35) rotate(-12)"/>
-          <use href="#dr-drone" transform="translate(79 29) rotate(9)"/>
-          <use href="#dr-drone" transform="translate(178 31) rotate(-20)"/>
-          <use href="#dr-drone" transform="translate(196 36) rotate(14)"/>
-          <use href="#dr-drone" transform="translate(252 30) rotate(-8)"/>
-          <use href="#dr-drone" transform="translate(278 43) rotate(16)"/>
-          <use href="#dr-drone" transform="translate(108 28) rotate(6)"/>
-          <use href="#dr-drone" transform="translate(304 38) rotate(-14)"/>
-          <path d="M0 86l18-6 12 5 20-4 14 6 22-5 16 6 24-4 18 5 26-6 20 6 22-5 26 5 20-4 24 6v9H0z" fill="#101720"/>
+          <path d="M284 82V62q12-12 24 0v20" fill="none" stroke="#171d26" stroke-width="3"/>
+          <g fill="none" stroke="#ffd39a" stroke-width="1.3" stroke-dasharray="4 3" opacity=".75"><path d="M40 32q16-9 34-5"/><path d="M232 34q18-8 38-4"/><path d="M272 56q14-4 24 2"/></g>
+          <use href="#dr-drone" transform="translate(58 34) rotate(-12) scale(.8)"/>
+          <use href="#dr-drone" transform="translate(82 27) rotate(9) scale(.7)"/>
+          <use href="#dr-drone" transform="translate(178 30) rotate(-20) scale(.85)"/>
+          <use href="#dr-drone" transform="translate(198 36) rotate(14) scale(.8)"/>
+          <use href="#dr-drone" transform="translate(252 29) rotate(-8) scale(.8)"/>
+          <use href="#dr-drone" transform="translate(280 43) rotate(16)"/>
+          <use href="#dr-drone" transform="translate(108 28) rotate(6) scale(.75)"/>
+          <use href="#dr-drone" transform="translate(306 37) rotate(-14) scale(.9)"/>
+          <path d="M0 86l18-6 12 5 20-4 14 6 22-5 16 6 24-4 18 5 26-6 20 6 22-5 26 5 20-4 24 6v9H0z" fill="url(#dr-street)"/>
           <g fill="#ff4f38"><circle cx="38" cy="81" r="2.6"/><circle cx="286" cy="83" r="2.6"/></g>
+          <rect x="10" y="75" width="58" height="13" rx="2" fill="#0b1620" stroke="#ff9270" stroke-width=".9"/>
+          <text x="39" y="84.5" fill="#ffd2b0" font-size="10.5" font-weight="700" text-anchor="middle">161 DOWN</text>
           <g>
-            <path d="M6 7h308l-9 9 9 9H6l9-9z" fill="#0a111b" opacity=".55" transform="translate(0 2)"/>
-            <path d="M6 5h308l-9 9 9 9H6l9-9z" fill="#a71f24"/>
-            <path d="M6 5h308l-9 9 9 9H6l9-9z" fill="none" stroke="#f0c982" stroke-width="1"/>
-            <path d="M15 22h290" stroke="#701419" stroke-width="1.6"/>
+            <path d="M5 7h310l-10 9 10 9H5l10-9z" fill="#0a111b" opacity=".55" transform="translate(0 2)"/>
+            <path d="M5 5h310l-10 9 10 9H5l10-9z" fill="#a71f24"/>
+            <path d="M5 5h310l-10 9 10 9H5l10-9z" fill="none" stroke="#f0c982" stroke-width="1"/>
+            <path d="M14 22h292" stroke="#701419" stroke-width="1.6"/>
+            <path d="M10 8q40-4 80 0t80 0 80 0 60 0" fill="none" stroke="#ffd9a0" stroke-width="1" opacity=".3"/>
             <text x="160" y="17.8" fill="#3a0e10" opacity=".6" font-size="16" font-weight="700" text-anchor="middle" letter-spacing="1.1" transform="translate(.7 .7)">186 DRONES</text>
             <text x="160" y="17" fill="#fff3d6" font-size="16" font-weight="700" text-anchor="middle" letter-spacing="1.1">186 DRONES</text>
           </g>
@@ -450,69 +466,86 @@
       <div class="lead-art">
         <svg viewBox="0 0 320 94" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
           <defs>
-            <linearGradient id="gulf-sky" x1="0" y1="0" x2="1" y2="1">
-              <stop offset="0" stop-color="#eaa052"/>
-              <stop offset=".48" stop-color="#b3704d"/>
-              <stop offset="1" stop-color="#1c4d66"/>
+            <linearGradient id="hz-sky" x1="0" y1="0" x2="1" y2=".8">
+              <stop offset="0" stop-color="#f0a95c"/>
+              <stop offset=".28" stop-color="#d17c58"/>
+              <stop offset=".62" stop-color="#6c5b70"/>
+              <stop offset="1" stop-color="#1b4a63"/>
             </linearGradient>
-            <radialGradient id="gulf-sun" cx=".18" cy=".72" r=".55">
-              <stop offset="0" stop-color="#ffe0a0" stop-opacity=".9"/>
-              <stop offset="1" stop-color="#ffe0a0" stop-opacity="0"/>
+            <radialGradient id="hz-sun" cx=".2" cy=".75" r=".55">
+              <stop offset="0" stop-color="#ffe2a6" stop-opacity=".9"/>
+              <stop offset="1" stop-color="#ffe2a6" stop-opacity="0"/>
             </radialGradient>
-            <linearGradient id="gulf-sea" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="0" stop-color="#2f687b"/>
-              <stop offset="1" stop-color="#102d3c"/>
+            <linearGradient id="hz-sea" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#3b7787"/>
+              <stop offset=".45" stop-color="#20566a"/>
+              <stop offset="1" stop-color="#0b2737"/>
             </linearGradient>
-            <pattern id="gulf-grain" width="6" height="6" patternUnits="userSpaceOnUse">
+            <linearGradient id="hz-wake" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#cfd9cf" stop-opacity=".5"/>
+              <stop offset="1" stop-color="#cfd9cf" stop-opacity="0"/>
+            </linearGradient>
+            <pattern id="hz-grain" width="6" height="6" patternUnits="userSpaceOnUse">
               <circle cx="1.2" cy="1.2" r=".7" fill="#fff0cb" opacity=".16"/>
               <circle cx="4.8" cy="4.8" r=".6" fill="#0b2633" opacity=".16"/>
             </pattern>
           </defs>
-          <rect width="320" height="94" fill="url(#gulf-sky)"/>
-          <rect width="320" height="94" fill="url(#gulf-grain)"/>
-          <ellipse cx="44" cy="62" rx="76" ry="44" fill="url(#gulf-sun)"/>
-          <g fill="none" stroke-linecap="round" opacity=".35">
+          <rect width="320" height="94" fill="url(#hz-sky)"/>
+          <rect width="320" height="94" fill="url(#hz-grain)"/>
+          <ellipse cx="46" cy="62" rx="86" ry="46" fill="url(#hz-sun)"/>
+          <circle cx="44" cy="59" r="8" fill="#ffe9b8" opacity=".85"/>
+          <g fill="none" stroke-linecap="round" opacity=".32">
             <path d="M-8 37q34-9 66 0t68-4" stroke="#ffe3b4" stroke-width="5"/>
             <path d="M196 32q42-11 84 0t54-3" stroke="#a5c8c6" stroke-width="5"/>
           </g>
-          <path d="M0 61q60-8 120 0t200-4v37H0z" fill="url(#gulf-sea)"/>
-          <path d="M0 61q60-8 120 0t200-4" fill="none" stroke="#d1b58c" stroke-width="1.6" opacity=".75"/>
-          <path d="M161 24l-13 70" stroke="#f5e6c6" stroke-width="1.6" stroke-dasharray="7 5" opacity=".6"/>
-          <g fill="none" stroke="#ffe1ae" stroke-width="2" stroke-dasharray="5 4" opacity=".9">
-            <path d="M4 55q32-16 68-14"/>
+          <path d="M0 62q60-9 120 0t200-4v36H0z" fill="url(#hz-sea)"/>
+          <path d="M0 62q60-9 120 0t200-4" fill="none" stroke="#f2c99a" stroke-width="1.7" opacity=".8"/>
+          <path d="M242 62l16-5 22 2 18-4 22 7z" fill="#244e58" opacity=".72"/>
+          <g fill="#173c48" opacity=".8">
+            <path d="M132 62h26l-4 5h-18z"/><rect x="140" y="58" width="8" height="4"/>
+            <path d="M158 61h18l-3 4h-12z"/><rect x="164" y="58" width="5" height="3"/>
           </g>
-          <g transform="translate(16 32) rotate(-7)">
-            <path d="M0 20l62-6 28 4-28 5L0 26l16 10-5 3-16-9z" fill="#ece8dc" stroke="#142229" stroke-width="1.5"/>
-            <path d="M29 17L41 0h8l-10 17z" fill="#a8b9b8" stroke="#142229" stroke-width="1.3"/>
-            <path d="M13 27L0 38l5 2 15-10z" fill="#a8b9b8" stroke="#142229" stroke-width="1.3"/>
-            <path d="M18 21h36" stroke="#a71f24" stroke-width="2.2"/>
-            <path d="M66 18l20-3" stroke="#a71f24" stroke-width="2.2"/>
-            <circle cx="88" cy="15" r="2.4" fill="#ffdca2"/>
+          <g stroke="#ffd9a3" stroke-width="1.6" opacity=".4">
+            <path d="M30 66v12M42 65v15M54 66v10M66 65v13"/>
           </g>
-          <path d="M90 42q40-24 84-3" fill="none" stroke="#f6c46f" stroke-width="2.4" stroke-dasharray="6 5"/>
-          <text x="136" y="43" fill="#fff3d6" stroke="#3a221b" stroke-width="2.4" paint-order="stroke" font-size="15" font-weight="700" text-anchor="middle">?</text>
-          <g transform="translate(184 40)">
-            <path d="M0 29h124l-16 17H18z" fill="#4c646c" stroke="#102029" stroke-width="1.7"/>
-            <path d="M16 13h92v16H16z" fill="#e0e6dc" stroke="#102029" stroke-width="1.5"/>
-            <rect x="26" y="6" width="28" height="7" fill="#aebfbd" stroke="#102029" stroke-width="1.2"/>
-            <rect x="70" y="6" width="28" height="7" fill="#aebfbd" stroke="#102029" stroke-width="1.2"/>
-            <path d="M42 29v-9a11 11 0 0 1 22 0v9" fill="none" stroke="#d3ded8" stroke-width="2.2"/>
-            <path d="M108 13V4" stroke="#102029" stroke-width="1.7"/>
-            <path d="M108 4l17 3-17 3z" fill="#a71f24"/>
-            <circle cx="112" cy="21" r="3" fill="#a71f24"/>
+          <path d="M163 24l-12 70" stroke="#f5e6c6" stroke-width="1.6" stroke-dasharray="7 5" opacity=".55"/>
+          <path d="M2 54q34-18 74-16" fill="none" stroke="#ffe0ae" stroke-width="2.2" stroke-dasharray="5 4" opacity=".9"/>
+          <g transform="translate(178 38)">
+            <path d="M6 43q58-9 118 0l-8 12H14z" fill="url(#hz-wake)"/>
+            <path d="M0 31h126l-17 18H18z" fill="#405b64" stroke="#0d222c" stroke-width="1.7"/>
+            <path d="M16 14h94v17H16z" fill="#dfe6dc" stroke="#0d222c" stroke-width="1.5"/>
+            <rect x="26" y="7" width="28" height="7" fill="#aebfbd" stroke="#0d222c" stroke-width="1.2"/>
+            <rect x="70" y="7" width="28" height="7" fill="#aebfbd" stroke="#0d222c" stroke-width="1.2"/>
+            <path d="M42 31v-9a11 11 0 0 1 22 0v9" fill="none" stroke="#d3ded8" stroke-width="2.2"/>
+            <path d="M108 14V5" stroke="#0d222c" stroke-width="1.7"/>
+            <path d="M108 5l17 3-17 3z" fill="#a71f24"/>
+            <circle cx="112" cy="22" r="3" fill="#a71f24"/>
           </g>
-          <path d="M270 28a36 36 0 0 1 21 32" fill="none" stroke="#f0d6a1" stroke-width="1.7" opacity=".9"/>
-          <g fill="none" stroke="#a9cbcc" stroke-width="1.7" stroke-linecap="round" opacity=".8">
-            <path d="M6 75q18-7 36 0t36 0"/>
-            <path d="M96 82q18-6 34 0t34 0"/>
-            <path d="M178 78q18-7 36 0t36 0"/>
-            <path d="M256 84q18-6 34 0t34 0"/>
+          <path d="M268 26a38 38 0 0 1 22 34" fill="none" stroke="#f0d6a1" stroke-width="1.7" opacity=".9"/>
+          <text x="140" y="45" fill="#fff3d6" stroke="#3a221b" stroke-width="2.4" paint-order="stroke" font-size="15" font-weight="700" text-anchor="middle">?</text>
+          <g transform="translate(16 30) rotate(-8)">
+            <path d="M0 21l67-7 30 5-30 5L0 28l18 11-6 3-18-10z" fill="#efebde" stroke="#12242c" stroke-width="1.6"/>
+            <path d="M32 18L45 0h9l-11 18z" fill="#a9baba" stroke="#12242c" stroke-width="1.4"/>
+            <path d="M15 29L1 41l6 2 16-12z" fill="#a9baba" stroke="#12242c" stroke-width="1.4"/>
+            <path d="M19 22h41" stroke="#a71f24" stroke-width="2.4"/>
+            <path d="M72 19l20-3" stroke="#a71f24" stroke-width="2.4"/>
+            <circle cx="94" cy="16" r="2.6" fill="#ffdca2"/>
+            <path d="M-4 24l-12 3 12 3" fill="#ff9a3c" opacity=".9"/>
           </g>
+          <g fill="none" stroke="#b9d4d2" stroke-width="1.7" stroke-linecap="round" opacity=".8">
+            <path d="M6 76q18-7 36 0t36 0"/>
+            <path d="M96 83q18-6 34 0t34 0"/>
+            <path d="M178 79q18-7 36 0t36 0"/>
+            <path d="M256 85q18-6 34 0t34 0"/>
+          </g>
+          <rect x="12" y="75" width="58" height="13" rx="2" fill="#0b2731" stroke="#f0c982" stroke-width=".9"/>
+          <text x="41" y="84.5" fill="#ffe6b0" font-size="10.5" font-weight="700" text-anchor="middle">HORMUZ</text>
           <g>
-            <path d="M6 7h308l-9 9 9 9H6l9-9z" fill="#0c2731" opacity=".55" transform="translate(0 2)"/>
-            <path d="M6 5h308l-9 9 9 9H6l9-9z" fill="#a71f24"/>
-            <path d="M6 5h308l-9 9 9 9H6l9-9z" fill="none" stroke="#f0c982" stroke-width="1"/>
-            <path d="M15 22h290" stroke="#701419" stroke-width="1.6"/>
+            <path d="M5 7h310l-10 9 10 9H5l10-9z" fill="#0c2731" opacity=".55" transform="translate(0 2)"/>
+            <path d="M5 5h310l-10 9 10 9H5l10-9z" fill="#a71f24"/>
+            <path d="M5 5h310l-10 9 10 9H5l10-9z" fill="none" stroke="#f0c982" stroke-width="1"/>
+            <path d="M14 22h292" stroke="#701419" stroke-width="1.6"/>
+            <path d="M10 8q40-4 80 0t80 0 80 0 60 0" fill="none" stroke="#ffd9a0" stroke-width="1" opacity=".3"/>
             <text x="160" y="17.8" fill="#3a0e10" opacity=".6" font-size="16" font-weight="700" text-anchor="middle" letter-spacing="1.1" transform="translate(.7 .7)">CLAIM vs DENIAL</text>
             <text x="160" y="17" fill="#fff3d6" font-size="16" font-weight="700" text-anchor="middle" letter-spacing="1.1">CLAIM vs DENIAL</text>
           </g>
@@ -662,21 +695,46 @@
 
     <article class="card">
       <svg viewBox="0 0 240 34" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
-        <rect width="240" height="34" fill="#e7ddc8"/>
-        <path d="M0 27l42-19 31 15 38-17 51 21 36-10 42 12v5H0z" fill="#b4a788"/>
-        <path d="M0 30h240v4H0z" fill="#8d9b68"/>
-        <g>
-          <rect x="83" y="15" width="58" height="14" rx="3" fill="#4d6250" stroke="#26302a" stroke-width="1.3"/>
-          <rect x="98" y="9" width="27" height="7" fill="#9bb1a1" stroke="#26302a" stroke-width="1.1"/>
-          <circle cx="99" cy="29" r="4" fill="#26302a"/><circle cx="130" cy="29" r="4" fill="#26302a"/>
+        <defs>
+          <linearGradient id="nba-arena" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#1b2740"/>
+            <stop offset=".6" stop-color="#2b3f63"/>
+            <stop offset="1" stop-color="#6a4630"/>
+          </linearGradient>
+          <radialGradient id="nba-spot" cx=".7" cy=".1" r=".6">
+            <stop offset="0" stop-color="#ffe6b0" stop-opacity=".55"/>
+            <stop offset="1" stop-color="#ffe6b0" stop-opacity="0"/>
+          </radialGradient>
+        </defs>
+        <rect width="240" height="34" fill="url(#nba-arena)"/>
+        <rect width="240" height="34" fill="url(#nba-spot)"/>
+        <g fill="#0d1829" opacity=".8">
+          <circle cx="14" cy="14" r="3"/><rect x="10" y="17" width="8" height="12" rx="3"/>
+          <circle cx="30" cy="12" r="2.6"/><rect x="27" y="15" width="7" height="11" rx="3"/>
+          <circle cx="70" cy="11" r="2.6"/><rect x="67" y="14" width="7" height="11" rx="3"/>
+          <circle cx="164" cy="12" r="2.8"/><rect x="161" y="15" width="8" height="11" rx="3"/>
+          <circle cx="218" cy="11" r="2.6"/><rect x="215" y="14" width="7" height="11" rx="3"/>
         </g>
-        <g fill="#a71f24"><rect x="155" y="8" width="7" height="21"/><rect x="169" y="8" width="7" height="21"/></g>
-        <path d="M159 8l14 0-7-7z" fill="#f4eee0" stroke="#333" stroke-width="1"/>
+        <path d="M0 26h240v8H0z" fill="#a76a35"/>
+        <path d="M0 26q120-4 240 0" fill="none" stroke="#f0c98b" stroke-width="1"/>
+        <path d="M0 31h240" stroke="#e0b577" stroke-width="1" opacity=".7"/>
+        <path d="M196 4v12" stroke="#0b1422" stroke-width="2"/>
+        <rect x="180" y="2" width="24" height="15" fill="#f2efe6" stroke="#0b1422" stroke-width="1.2"/>
+        <path d="M184 17h16l-3 5h-10z" fill="none" stroke="#e0642c" stroke-width="1.6"/>
+        <g fill="#101b2e">
+          <circle cx="118" cy="7" r="4"/>
+          <path d="M113 12l10 1 4 10-5 1-3-6-2 8-5-1 2-9-4 6-4-2z"/>
+        </g>
+        <circle cx="145" cy="12" r="6" fill="#d9792f" stroke="#3a1d0d" stroke-width="1.2"/>
+        <path d="M139 12h12M145 6v12" stroke="#3a1d0d" stroke-width="1"/>
+        <path d="M152 8q8-4 14-2" fill="none" stroke="#ffd79a" stroke-width="1.4" stroke-dasharray="3 2"/>
+        <rect x="12" y="4" width="44" height="12" rx="2" fill="#0c1727" stroke="#f0c98b" stroke-width=".8"/>
+        <text x="34" y="13" fill="#ffe6b0" font-size="10.5" font-weight="700" text-anchor="middle">114–91</text>
       </svg>
       <div class="card-body">
-        <div class="kicker"><span class="num">11</span> SINALOA · RAID <span class="status reported">REPORTED</span></div>
-        <h3>Troops hold state after cartel raid</h3>
-        <p>4 soldiers, 7 suspects killed (Anadolu).</p>
+        <div class="kicker"><span class="num">11</span> NBA · SAT NIGHT <span class="status reported">REPORTED</span></div>
+        <h3>Wembanyama's 50-point night</h3>
+        <p>19 reb, 5 blocks; Spurs 114–91. Reported Sunday (AP/BBC Sport).</p>
       </div>
     </article>
   </section>
@@ -782,7 +840,7 @@
           <li><span class="num">25</span><b>AUSTRALIA</b><span>Beats England by 3 wickets; 188 chase (ICC).</span></li>
           <li><span class="num">26</span><b>FRANCE</b><span>Protests: 150,000 vs 82,500 (organisers/ministry).</span></li>
           <li><span class="num">27</span><b>SOMALIA</b><span>Expels UAE envoy, no reason (Premium Times).</span></li>
-          <li><span class="num">28</span><b>COP31</b><span>"Antalya Accords" closed; floor only (BBC).</span></li>
+          <li><span class="num">28</span><b>COP31</b><span>No "fossil fuels"; UAE Consensus recalled (BBC).</span></li>
           <li><span class="num">29</span><b>GAZA</b><span>Ministry: 1,671 dead since ceasefire (ministry).</span></li>
           <li><span class="num">30</span><b>GULF</b><span>Araghchi: Hormuz plan on table (Xinhua).</span></li>
           <li><span class="num">31</span><b>ISRAEL</b><span>Eisenkot opens Likud coalition talks (WION/ToI).</span></li>
@@ -797,7 +855,7 @@
   </section>
 
   <footer class="sources">
-    <b>SOURCES&nbsp;</b>Reuters · AP · BBC · Al Jazeera · Kyiv Independent · Yonhap · The Hindu · Anadolu · Xinhua · info.gov.hk · Guardian · ICC · WION · Ilke · CNN · Ch.13 · France24 · The National · al-Masirah · Clay Institute
+    <b>SOURCES&nbsp;</b>Reuters · AP · BBC · BBC Sport · Al Jazeera · Kyiv Independent · Yonhap · The Hindu · Anadolu · Xinhua · info.gov.hk · Guardian · ICC · WION · Ilke · CNN · Ch.13 · France24 · The National · al-Masirah · Clay Institute
   </footer>
 
 </div>
