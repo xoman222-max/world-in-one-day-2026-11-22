@@ -7,9 +7,9 @@
   :root {
     --paper: #f5ecd9;
     --paper-2: #fbf5e8;
-    --ink: #1d1b18;
-    --muted: #5c5449;
-    --red: #a71f24;
+    --ink: #1a1815;
+    --muted: #443d33;
+    --red: #9e1c21;
     --rule: #8d8578;
     --eu: #2f5d8c;
     --me: #a71f24;
@@ -48,12 +48,12 @@
   }
   .mast-top { display: flex; justify-content: space-between; align-items: baseline; height: 18px; }
   .logo { font-family: "Oswald", sans-serif; font-size: 19px; font-weight: 700; letter-spacing: 2.3px; line-height: 1; }
-  .edition { font-family: "Oswald", sans-serif; font-size: 10.5px; font-weight: 500; letter-spacing: 1.1px; color: var(--muted); }
-  .date { font-family: "Oswald", sans-serif; font-size: 46px; font-weight: 700; letter-spacing: -.9px; line-height: .98; margin: 2px 0 4px; }
-  .deck { font-size: 12.8px; font-weight: 600; line-height: 16px; color: #332f28; }
+  .edition { font-family: "Oswald", sans-serif; font-size: 10.5px; font-weight: 600; letter-spacing: 1px; color: var(--muted); }
+  .date { font-family: "Oswald", sans-serif; font-size: 44px; font-weight: 700; letter-spacing: -.8px; line-height: .98; margin: 2px 0 5px; }
+  .deck { font-size: 13px; font-weight: 700; line-height: 16px; color: #29251f; }
   .datecheck { border-left: 3px solid var(--red); padding: 2px 0 0 10px; overflow: hidden; }
-  .datecheck h2 { font-family: "Oswald", sans-serif; font-size: 10.5px; font-weight: 700; letter-spacing: 1.2px; color: var(--red); margin: 0 0 3px; }
-  .datecheck p { font-size: 10.6px; font-weight: 600; line-height: 12.3px; margin: 0; color: #332f28; }
+  .datecheck h2 { font-family: "Oswald", sans-serif; font-size: 10.5px; font-weight: 700; letter-spacing: 1.1px; color: var(--red); margin: 0 0 3px; }
+  .datecheck p { font-size: 10.6px; font-weight: 600; line-height: 12.6px; margin: 0; color: #29251f; }
 
   .numbers { display: grid; grid-template-columns: repeat(6, 1fr); gap: 7px; }
   .stat {
@@ -67,7 +67,7 @@
     overflow: hidden;
   }
   .stat b { font-family: "Oswald", sans-serif; font-size: 22px; font-weight: 700; line-height: .98; color: var(--red); }
-  .stat span { font-size: 10.5px; font-weight: 600; line-height: 1.1; margin-top: 2px; color: #38332c; }
+  .stat span { font-size: 10.5px; font-weight: 700; line-height: 1.08; margin-top: 2px; color: #2f2a23; }
 
   .timeline {
     display: flex;
@@ -78,13 +78,14 @@
     overflow: hidden;
     font-family: "Roboto Condensed", "Source Sans 3", sans-serif;
     font-size: 10.6px;
-    font-weight: 600;
+    font-weight: 700;
     line-height: 13px;
+    color: #2c2720;
     white-space: nowrap;
   }
-  .timeline .title { font-family: "Oswald", sans-serif; font-size: 10.5px; font-weight: 700; letter-spacing: 1px; color: var(--red); padding-right: 7px; border-right: 2px solid var(--red); }
+  .timeline .title { font-family: "Oswald", sans-serif; font-size: 10.5px; font-weight: 700; letter-spacing: .8px; color: var(--red); padding-right: 7px; border-right: 2px solid var(--red); }
   .timeline span:not(.title) { flex: 1; overflow: hidden; text-overflow: ellipsis; }
-  .timeline b { font-family: "Oswald", sans-serif; font-size: 10.5px; color: var(--red); }
+  .timeline b { font-family: "Oswald", sans-serif; font-size: 10.5px; color: #8c171c; }
 
   .leads { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
   .lead { border: 1.5px solid var(--ink); background: var(--paper-2); display: grid; grid-template-rows: 94px 1fr; overflow: hidden; }
@@ -98,10 +99,10 @@
     font-family: "Oswald", sans-serif;
     font-size: 10.6px;
     font-weight: 700;
-    letter-spacing: .55px;
-    color: var(--red);
+    letter-spacing: .45px;
+    color: #8c171c;
     line-height: 14px;
-    margin-bottom: 3px;
+    margin-bottom: 2px;
   }
   .num {
     display: inline-flex;
@@ -111,9 +112,10 @@
     height: 13px;
     min-width: 13px;
     border-radius: 50%;
-    background: var(--red);
+    background: #8c171c;
     color: #fff8ea;
     font-size: 10.5px;
+    font-weight: 700;
     line-height: 1;
     letter-spacing: 0;
   }
@@ -125,26 +127,26 @@
     font-family: "Oswald", sans-serif;
     font-size: 10.5px;
     font-weight: 700;
-    letter-spacing: .2px;
+    letter-spacing: .1px;
     line-height: 12px;
     white-space: nowrap;
   }
-  .status.ongoing { color: #8a3a16; background: #f7e3c9; }
-  .status.reported { color: #3b5b45; background: #e7efe4; }
-  .status.claim { color: var(--red); background: #fff0e7; }
-  .status.officials { color: var(--eu); background: #e7eef5; }
-  .lead h2 { font-family: "Playfair Display", Georgia, serif; font-size: 20.5px; font-weight: 700; line-height: 1.02; letter-spacing: -.2px; margin: 0 0 4px; }
-  .lead p { font-size: 11.2px; font-weight: 500; line-height: 1.22; margin: 0 0 3px; color: #302b25; }
-  .src { font-size: 10.5px; font-style: italic; line-height: 12px; color: var(--muted); margin-top: auto; }
+  .status.ongoing { color: #77300f; background: #f7ddb5; }
+  .status.reported { color: #2c4a36; background: #dcebd9; }
+  .status.claim { color: #8c171c; background: #ffe6d8; }
+  .status.officials { color: #244d78; background: #dfe9f3; }
+  .lead h2 { font-family: "Playfair Display", Georgia, serif; font-size: 20.5px; font-weight: 700; line-height: 1.02; letter-spacing: -.3px; margin: 0 0 3px; }
+  .lead p { font-size: 11.5px; font-weight: 600; line-height: 1.22; margin: 0 0 2px; color: #2a251f; }
+  .src { font-size: 10.5px; font-style: italic; font-weight: 600; line-height: 12px; color: var(--muted); margin-top: auto; }
 
   .cards { display: grid; grid-template-columns: repeat(4, 1fr); grid-template-rows: repeat(2, 1fr); gap: 8px; }
   .card { border: 1px solid var(--rule); background: rgba(255,251,242,.9); display: grid; grid-template-rows: 34px 1fr; overflow: hidden; }
   .card svg { border-bottom: 1px solid var(--rule); }
   .card-body { padding: 3px 5px; overflow: hidden; }
-  .card .kicker { font-size: 10.5px; line-height: 13.5px; letter-spacing: .2px; margin-bottom: 1px; }
+  .card .kicker { font-size: 10.5px; line-height: 13px; letter-spacing: .1px; margin-bottom: 0; }
   .card .status { padding: 0 2px; line-height: 11px; }
-  .card h3 { font-family: "Playfair Display", Georgia, serif; font-size: 14px; font-weight: 700; line-height: 1.02; letter-spacing: -.1px; margin: 0 0 1px; }
-  .card p { font-size: 10.5px; font-weight: 500; line-height: 1.1; margin: 0; color: #332e27; }
+  .card h3 { font-family: "Playfair Display", Georgia, serif; font-size: 14px; font-weight: 700; line-height: 1.02; letter-spacing: -.15px; margin: 0 0 1px; }
+  .card p { font-size: 10.6px; font-weight: 600; line-height: 1.13; margin: 0; color: #2a251f; }
 
   .regions { display: grid; grid-template-columns: repeat(6, 1fr); gap: 6px; }
   .region {
@@ -156,9 +158,9 @@
     justify-content: center;
     gap: 5px;
     font-family: "Oswald", sans-serif;
-    font-size: 10.7px;
-    font-weight: 600;
-    letter-spacing: .4px;
+    font-size: 10.8px;
+    font-weight: 700;
+    letter-spacing: .3px;
     line-height: 1;
     white-space: nowrap;
   }
@@ -172,19 +174,20 @@
     border-bottom: 1px solid var(--rule);
     font-family: "Roboto Condensed", "Source Sans 3", sans-serif;
     font-size: 10.5px;
-    font-weight: 600;
+    font-weight: 700;
     line-height: 12px;
+    color: #2c2720;
     white-space: nowrap;
     overflow: hidden;
   }
-  .legend b { font-family: "Oswald", sans-serif; font-size: 10.5px; letter-spacing: .8px; color: var(--red); }
-  .legend i { font-style: normal; color: var(--muted); font-weight: 500; }
+  .legend b { font-family: "Oswald", sans-serif; font-size: 10.5px; letter-spacing: .6px; color: #8c171c; }
+  .legend i { font-style: normal; color: var(--muted); font-weight: 700; }
 
   .bottom { display: grid; grid-template-columns: 404px 1fr; gap: 10px; overflow: hidden; }
   .panel { border-top: 2px solid var(--ink); padding-top: 3px; overflow: hidden; min-width: 0; }
   .panel-head { display: flex; align-items: center; gap: 8px; font-family: "Playfair Display", Georgia, serif; font-size: 15px; font-weight: 700; line-height: 18px; margin-bottom: 3px; white-space: nowrap; min-width: 0; }
   .panel-head::after { content: ""; flex: 1; height: 3px; background: var(--red); }
-  .panel-head span { font-family: "Oswald", sans-serif; font-size: 10.5px; font-weight: 600; letter-spacing: .7px; color: var(--muted); }
+  .panel-head span { font-family: "Oswald", sans-serif; font-size: 10.5px; font-weight: 700; letter-spacing: .5px; color: var(--muted); }
   .map-wrap { width: 100%; height: 210px; background: rgba(255,251,242,.55); overflow: hidden; }
   .map-wrap svg { display: block; width: 100%; height: 100%; }
   .land { fill: #e6dcc8; stroke: #b9a98e; stroke-width: 1.1; }
@@ -199,15 +202,16 @@
     align-items: baseline;
     gap: 5px;
     font-family: "Roboto Condensed", "Source Sans 3", sans-serif;
-    font-size: 10.5px;
+    font-size: 10.6px;
     font-weight: 600;
-    line-height: 12.8px;
+    line-height: 13.1px;
+    color: #2a251f;
     margin-bottom: 1px;
     white-space: nowrap;
     overflow: hidden;
   }
   .more-grid li .num { font-family: "Oswald", sans-serif; }
-  .more-grid li b { font-family: "Oswald", sans-serif; font-size: 10.5px; letter-spacing: .3px; color: var(--ink); }
+  .more-grid li b { font-family: "Oswald", sans-serif; font-size: 10.6px; letter-spacing: .1px; color: var(--ink); }
   .more-grid li span { overflow: hidden; text-overflow: ellipsis; min-width: 0; }
 
   .sources {
@@ -216,13 +220,13 @@
     align-items: center;
     font-family: "Roboto Condensed", "Source Sans 3", sans-serif;
     font-size: 10.5px;
-    font-weight: 600;
-    letter-spacing: .02px;
+    font-weight: 700;
+    letter-spacing: 0;
     white-space: nowrap;
     color: var(--muted);
     overflow: hidden;
   }
-  .sources b { font-family: "Oswald", sans-serif; letter-spacing: .8px; color: var(--red); }
+  .sources b { font-family: "Oswald", sans-serif; letter-spacing: .6px; color: #8c171c; }
   svg text { font-family: "Oswald", sans-serif; }
 </style>
 </head>
@@ -236,11 +240,11 @@
         <span class="edition">SUNDAY EDITION · 36 STORIES · 6 REGIONS</span>
       </div>
       <div class="date">Sunday 22 November 2026</div>
-      <div class="deck">COP31's gavel waits · 186 drones over Ukraine · F-16 claim denied · 720/9 record</div>
+      <div class="deck">COP31 draft unadopted · 186 drones over Ukraine · F-16 claim denied · 720/9 in NZ</div>
     </div>
     <aside class="datecheck">
       <h2>DATE CHECK · UTC</h2>
-      <p>Wires read to about 09:30 UTC, Sunday 22 November 2026. Left out on purpose as not 22 November news: Maluku M7.2 quake (Sat 21), Bahrain industrial-site strike (Sat evening), Kryvyi Rih missile strike (Sat).</p>
+      <p>Wires read to about 09:30–10:00 UTC, Sunday 22 November 2026. Left out on purpose as not 22 November news: Maluku M7.2 quake (Sat 21), Bahrain industrial-site strike (Sat evening), Kryvyi Rih missile strike (Sat).</p>
     </aside>
   </header>
 
@@ -249,7 +253,7 @@
     <div class="stat"><b>161</b><span>down or jammed, air force says</span></div>
     <div class="stat"><b>35%</b><span>electricity goal for 2035</span></div>
     <div class="stat"><b>1,671</b><span>Gaza deaths since ceasefire</span></div>
-    <div class="stat"><b>720/9</b><span>India's record Test total</span></div>
+    <div class="stat"><b>720/9</b><span>highest Test total in NZ</span></div>
     <div class="stat"><b>36</b><span>numbered stories, six regions</span></div>
   </section>
 
@@ -259,39 +263,94 @@
     <span><b>~05:30</b> Las Vegas GP ends</span>
     <span><b>08:00</b> HK: 97.4% by 4pm local</span>
     <span><b>08:52</b> COP31 closes; floor only</span>
-    <span><b>09:30</b> wires cut-off</span>
+    <span><b>~10:00</b> wires cut-off</span>
   </section>
 
   <section class="leads">
     <article class="lead">
       <div class="lead-art">
         <svg viewBox="0 0 320 94" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
-          <rect width="320" height="94" fill="#24504f"/>
-          <rect width="320" height="24" fill="#a71f24"/>
-          <text x="160" y="17" fill="#fff8ea" font-size="16" font-weight="700" text-anchor="middle" letter-spacing="1.1">THE GAVEL WAITS</text>
-          <circle cx="270" cy="59" r="25" fill="#5d95b3" stroke="#f2e5c9" stroke-width="1.6"/>
-          <path d="M250 47c8-5 14-4 20-1 7 4 12 1 18-3v16c-7 4-13 5-19 2-7-3-13-2-19 3z" fill="#8fae79"/>
-          <path d="M254 66c6-3 12-1 17 2 6 3 11 2 16-1v4c-7 5-13 5-19 2-6-3-10-3-14-1z" fill="#8fae79"/>
-          <ellipse cx="154" cy="83" rx="128" ry="12" fill="#e0c9a2" stroke="#f2e5c9" stroke-width="1.4"/>
-          <g transform="rotate(-26 88 57)">
-            <rect x="52" y="46" width="72" height="16" rx="3" fill="#d79854" stroke="#382d23" stroke-width="1.5"/>
-            <rect x="46" y="42" width="14" height="24" rx="3" fill="#b5733b" stroke="#382d23" stroke-width="1.5"/>
-            <rect x="116" y="42" width="14" height="24" rx="3" fill="#b5733b" stroke="#382d23" stroke-width="1.5"/>
-            <rect x="82" y="60" width="10" height="38" rx="3" fill="#c58b4f" stroke="#382d23" stroke-width="1.5"/>
+          <defs>
+            <linearGradient id="c31-wall" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#123a45"/>
+              <stop offset=".62" stop-color="#2a6a67"/>
+              <stop offset="1" stop-color="#0e3034"/>
+            </linearGradient>
+            <radialGradient id="c31-glow" cx=".52" cy=".5" r=".58">
+              <stop offset="0" stop-color="#ffd68d" stop-opacity=".78"/>
+              <stop offset="1" stop-color="#ffd68d" stop-opacity="0"/>
+            </radialGradient>
+            <linearGradient id="c31-desk" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#d6a869"/>
+              <stop offset="1" stop-color="#6c4325"/>
+            </linearGradient>
+            <pattern id="c31-grain" width="7" height="7" patternUnits="userSpaceOnUse">
+              <circle cx="1.4" cy="1.6" r=".8" fill="#f8e5bd" opacity=".18"/>
+              <circle cx="5.2" cy="5" r=".7" fill="#05262a" opacity=".2"/>
+            </pattern>
+          </defs>
+          <rect width="320" height="94" fill="url(#c31-wall)"/>
+          <rect width="320" height="94" fill="url(#c31-grain)"/>
+          <ellipse cx="164" cy="55" rx="124" ry="47" fill="url(#c31-glow)"/>
+          <g fill="#f1c47d" opacity=".88">
+            <path d="M22 70V47a19 19 0 0 1 38 0v23z"/>
+            <path d="M82 70V47a19 19 0 0 1 38 0v23z"/>
+            <path d="M202 70V47a19 19 0 0 1 38 0v23z"/>
+            <path d="M262 70V47a19 19 0 0 1 38 0v23z"/>
           </g>
-          <rect x="17" y="38" width="8" height="38" rx="4" fill="#f8f0df" stroke="#1d1b18" stroke-width="1"/>
-          <circle cx="21" cy="80" r="6.5" fill="#f8f0df" stroke="#1d1b18" stroke-width="1"/>
-          <rect x="19.5" y="47" width="3" height="32" fill="#e04b35"/>
-          <circle cx="21" cy="80" r="4" fill="#e04b35"/>
-          <path d="M11 58h15" stroke="#e04b35" stroke-width="1.6"/>
-          <text x="29" y="55" fill="#f6c87a" font-size="10.5" font-weight="700">1.5°C</text>
-          <g fill="#f2dfb9"><rect x="118" y="70" width="14" height="5"/><rect x="145" y="70" width="14" height="5"/><rect x="172" y="70" width="14" height="5"/></g>
+          <g fill="none" stroke="#0c2d32" stroke-width="2" opacity=".95">
+            <path d="M22 70V47a19 19 0 0 1 38 0v23zM82 70V47a19 19 0 0 1 38 0v23zM202 70V47a19 19 0 0 1 38 0v23zM262 70V47a19 19 0 0 1 38 0v23z"/>
+            <path d="M41 29v41M101 29v41M221 29v41M281 29v41M22 57h38M82 57h38M202 57h38M262 57h38"/>
+          </g>
+          <g fill="#2c7070" opacity=".9">
+            <path d="M22 65q10-7 19-2t19-3v10H22zM82 65q10-7 19-2t19-3v10H82zM202 65q10-7 19-2t19-3v10h-38zM262 65q10-7 19-2t19-3v10h-38z"/>
+          </g>
+          <g fill="none" stroke-linecap="round" opacity=".4">
+            <path d="M-6 42q38-12 76-3" stroke="#f6d79c" stroke-width="4"/>
+            <path d="M244 36q42-10 82 2" stroke="#8fc2b6" stroke-width="5"/>
+          </g>
+          <rect x="120" y="29" width="80" height="36" rx="2" fill="#e9d8b4" stroke="#0b2b2f" stroke-width="2"/>
+          <rect x="124" y="33" width="72" height="28" fill="#f7ecd2"/>
+          <text x="160" y="46" fill="#8d3227" font-size="13" font-weight="700" text-anchor="middle">1.5°C</text>
+          <path d="M130 52h60" stroke="#a71f24" stroke-width="2.6"/>
+          <path d="M130 57h42" stroke="#5c5449" stroke-width="2"/>
+          <g stroke="#0c2d32" stroke-width="1.8" fill="#dcd0b4">
+            <path d="M153 74V61l9-6"/>
+            <ellipse cx="163" cy="54" rx="4.4" ry="3.2" transform="rotate(-35 163 54)"/>
+          </g>
+          <path d="M0 76q160-11 320 0v18H0z" fill="url(#c31-desk)"/>
+          <path d="M0 76q160-11 320 0" fill="none" stroke="#f4d9a5" stroke-width="1.8" opacity=".85"/>
+          <g fill="#0a282b" opacity=".9">
+            <circle cx="16" cy="68" r="5"/><path d="M7 78q9-9 18 0z"/>
+            <circle cx="38" cy="70" r="4.6"/><path d="M30 79q8-8 16 0z"/>
+            <circle cx="282" cy="68" r="5"/><path d="M273 78q9-9 18 0z"/>
+            <circle cx="304" cy="70" r="4.6"/><path d="M296 79q8-8 16 0z"/>
+          </g>
+          <g transform="translate(196 57)">
+            <ellipse cx="24" cy="24" rx="22" ry="4.5" fill="#072427" opacity=".5"/>
+            <rect x="9" y="17" width="32" height="6" rx="2" fill="#3c2a1b"/>
+            <g transform="rotate(-25 26 11)">
+              <rect x="1" y="7" width="36" height="8" rx="2" fill="#dca85f" stroke="#3c2a1b" stroke-width="1.4"/>
+              <rect x="-5" y="4" width="9" height="14" rx="2" fill="#b77d3d" stroke="#3c2a1b" stroke-width="1.4"/>
+              <rect x="38" y="4" width="9" height="14" rx="2" fill="#b77d3d" stroke="#3c2a1b" stroke-width="1.4"/>
+              <path d="M4 9h30" stroke="#ffe0ac" stroke-width="1.3" opacity=".9"/>
+            </g>
+          </g>
+          <g fill="#f5dfae"><rect x="66" y="74" width="15" height="4"/><rect x="92" y="74" width="15" height="4"/><rect x="230" y="74" width="15" height="4"/></g>
+          <g>
+            <path d="M6 7h308l-9 9 9 9H6l9-9z" fill="#082326" opacity=".5" transform="translate(0 2)"/>
+            <path d="M6 5h308l-9 9 9 9H6l9-9z" fill="#a71f24"/>
+            <path d="M6 5h308l-9 9 9 9H6l9-9z" fill="none" stroke="#f0c982" stroke-width="1"/>
+            <path d="M15 22h290" stroke="#701419" stroke-width="1.6"/>
+            <text x="160" y="17.8" fill="#3a0e10" opacity=".6" font-size="16" font-weight="700" text-anchor="middle" letter-spacing="1.1" transform="translate(.7 .7)">THE GAVEL WAITS</text>
+            <text x="160" y="17" fill="#fff3d6" font-size="16" font-weight="700" text-anchor="middle" letter-spacing="1.1">THE GAVEL WAITS</text>
+          </g>
         </svg>
       </div>
       <div class="lead-body">
         <div class="kicker"><span class="num">1</span> ANTALYA · CLIMATE <span class="status ongoing">ONGOING</span></div>
-        <h2>COP31 draft drops fossil-fuel call</h2>
-        <p>Third "final" text at 3 a.m. keeps the 35% goal, admits 1.5C overshoot; EU calls it a step back. Plenary delayed (BBC).</p>
+        <h2>COP31's gavel still waits</h2>
+        <p>Antalya Accords draft not adopted by 10:00 UTC; EU weighs rejecting it. Talks closed — changes must be made on the floor (BBC live).</p>
         <div class="src">BBC · AP · Guardian</div>
       </div>
     </article>
@@ -299,34 +358,84 @@
     <article class="lead">
       <div class="lead-art">
         <svg viewBox="0 0 320 94" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
-          <rect width="320" height="94" fill="#6e6a63"/>
-          <rect width="320" height="24" fill="#a71f24"/>
-          <text x="160" y="17" fill="#fff8ea" font-size="16" font-weight="700" text-anchor="middle" letter-spacing="1.1">186 DRONES</text>
-          <circle cx="287" cy="34" r="10" fill="#e8bc73"/>
-          <rect x="70" y="28" width="136" height="58" fill="#3d4240" stroke="#1f2220" stroke-width="1.6"/>
-          <g fill="#d9c7a5">
-            <rect x="80" y="34" width="15" height="8"/><rect x="103" y="34" width="15" height="8"/><rect x="126" y="34" width="15" height="8"/><rect x="149" y="34" width="15" height="8"/><rect x="172" y="34" width="15" height="8"/>
-            <rect x="80" y="45" width="15" height="8"/><rect x="103" y="45" width="15" height="8"/><rect x="149" y="45" width="15" height="8"/><rect x="172" y="45" width="15" height="8"/>
-            <rect x="80" y="56" width="15" height="8"/><rect x="126" y="56" width="15" height="8"/><rect x="149" y="56" width="15" height="8"/><rect x="172" y="56" width="15" height="8"/>
-            <rect x="80" y="67" width="15" height="8"/><rect x="103" y="67" width="15" height="8"/><rect x="126" y="67" width="15" height="8"/><rect x="149" y="67" width="15" height="8"/><rect x="172" y="67" width="15" height="8"/>
+          <defs>
+            <linearGradient id="dr-sky" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#141e39"/>
+              <stop offset=".58" stop-color="#3c304a"/>
+              <stop offset="1" stop-color="#8c4c36"/>
+            </linearGradient>
+            <radialGradient id="dr-fire" cx=".46" cy=".95" r=".62">
+              <stop offset="0" stop-color="#ffb45c" stop-opacity=".85"/>
+              <stop offset="1" stop-color="#ffb45c" stop-opacity="0"/>
+            </radialGradient>
+            <linearGradient id="dr-beam" x1="0" y1="1" x2="0" y2="0">
+              <stop offset="0" stop-color="#ffe3a8" stop-opacity=".5"/>
+              <stop offset="1" stop-color="#ffe3a8" stop-opacity="0"/>
+            </linearGradient>
+            <pattern id="dr-grain" width="6" height="6" patternUnits="userSpaceOnUse">
+              <circle cx="1" cy="1.3" r=".7" fill="#ffe6bb" opacity=".14"/>
+              <circle cx="4.6" cy="4.4" r=".6" fill="#08101d" opacity=".18"/>
+            </pattern>
+            <g id="dr-drone">
+              <path d="M-8 0h16M0-7v14" stroke="#0d121b" stroke-width="2.4" stroke-linecap="round"/>
+              <rect x="-3.4" y="-2.8" width="6.8" height="5.6" rx="1.5" fill="#0d121b"/>
+              <circle cx="0" cy="0" r="1.3" fill="#ff5c3d"/>
+            </g>
+          </defs>
+          <rect width="320" height="94" fill="url(#dr-sky)"/>
+          <rect width="320" height="94" fill="url(#dr-grain)"/>
+          <ellipse cx="150" cy="87" rx="150" ry="52" fill="url(#dr-fire)"/>
+          <path d="M56 94L18 28l13-2 42 68zM266 94l34-64-12-3-46 67z" fill="url(#dr-beam)"/>
+          <g fill="none" stroke-linecap="round" opacity=".32">
+            <path d="M-8 39q34-10 68-1t66-4" stroke="#b09ab4" stroke-width="6"/>
+            <path d="M174 34q44-11 88 0t70-4" stroke="#b09ab4" stroke-width="5"/>
+            <path d="M-4 50q30-7 56 0" stroke="#e6bd9a" stroke-width="2.4"/>
           </g>
-          <path d="M117 42l20-8 14 12 18-6-6 18-20 7-14-9-15 6z" fill="#171a18"/>
-          <path d="M126 48l14 7-8 12z" fill="#e06b32"/>
-          <g fill="#b8b2a6" opacity=".8"><circle cx="128" cy="29" r="7"/><circle cx="144" cy="26" r="9"/><circle cx="162" cy="29" r="7"/></g>
-          <g stroke="#171a18" stroke-width="2.4" fill="#2b3331">
-            <line x1="24" y1="38" x2="52" y2="30"/><line x1="38" y1="27" x2="38" y2="47"/>
-            <ellipse cx="24" cy="38" rx="9" ry="3"/><ellipse cx="52" cy="30" rx="9" ry="3"/>
-            <ellipse cx="38" cy="24" rx="6" ry="2.5"/><ellipse cx="38" cy="50" rx="6" ry="2.5"/>
-            <rect x="32" y="32" width="12" height="11" rx="3"/>
-            <line x1="258" y1="36" x2="288" y2="27"/><line x1="273" y1="24" x2="273" y2="46"/>
-            <ellipse cx="258" cy="36" rx="9" ry="3"/><ellipse cx="288" cy="27" rx="9" ry="3"/>
-            <ellipse cx="273" cy="21" rx="6" ry="2.5"/><ellipse cx="273" cy="49" rx="6" ry="2.5"/>
-            <rect x="267" y="30" width="12" height="11" rx="3"/>
+          <rect x="24" y="46" width="48" height="42" fill="#1c222d"/>
+          <g fill="#f2c47d" opacity=".9">
+            <rect x="30" y="52" width="8" height="6"/><rect x="44" y="52" width="8" height="6"/><rect x="58" y="52" width="8" height="6"/>
+            <rect x="30" y="64" width="8" height="6"/><rect x="58" y="64" width="8" height="6"/>
+            <rect x="44" y="76" width="8" height="6"/>
           </g>
-          <rect x="0" y="86" width="128" height="8" fill="#353a38"/>
-          <rect x="178" y="86" width="142" height="8" fill="#353a38"/>
-          <path d="M128 86l14-6 16 6-16 6zM178 86l-14-6-15 6 15 6z" fill="#73716a"/>
-          <circle cx="174" cy="85" r="3" fill="#a71f24"/>
+          <path d="M90 40h82v50H90z" fill="#242a35"/>
+          <path d="M136 40l11 9-9 9 13 9-15 9 9 14h-26V40z" fill="#0c1119"/>
+          <g fill="#eec47d" opacity=".86">
+            <rect x="96" y="46" width="10" height="7"/><rect x="112" y="46" width="10" height="7"/><rect x="154" y="46" width="10" height="7"/>
+            <rect x="96" y="59" width="10" height="7"/><rect x="154" y="59" width="10" height="7"/>
+            <rect x="96" y="72" width="10" height="7"/><rect x="112" y="72" width="10" height="7"/><rect x="154" y="72" width="10" height="7"/>
+          </g>
+          <g fill="#6b5c5b" opacity=".72">
+            <circle cx="132" cy="31" r="9"/><circle cx="146" cy="26" r="12"/><circle cx="163" cy="30" r="9"/>
+            <path d="M122 38q22-9 50 0z"/>
+          </g>
+          <path d="M118 86q5-15 13-7t12-5q-4 12 3 12z" fill="#f0752b"/>
+          <path d="M123 86q4-9 8-4t8-2q-2 6 2 6z" fill="#ffd16e"/>
+          <path d="M188 40h14v48h-14zM248 40h14v48h-14z" fill="#1b212b"/>
+          <path d="M198 52q28-21 56 0v12q-28-19-56 0z" fill="#1b212b"/>
+          <path d="M182 84h96" stroke="#141a23" stroke-width="4"/>
+          <path d="M226 52v32" stroke="#141a23" stroke-width="3"/>
+          <path d="M282 82V62q12-12 24 0v20" fill="none" stroke="#171d26" stroke-width="3"/>
+          <g fill="none" stroke="#ffd39a" stroke-width="1.3" stroke-dasharray="4 3" opacity=".8">
+            <path d="M40 32q16-9 34-5"/><path d="M232 34q18-8 38-4"/><path d="M272 56q14-4 24 2"/>
+          </g>
+          <use href="#dr-drone" transform="translate(57 35) rotate(-12)"/>
+          <use href="#dr-drone" transform="translate(79 29) rotate(9)"/>
+          <use href="#dr-drone" transform="translate(178 31) rotate(-20)"/>
+          <use href="#dr-drone" transform="translate(196 36) rotate(14)"/>
+          <use href="#dr-drone" transform="translate(252 30) rotate(-8)"/>
+          <use href="#dr-drone" transform="translate(278 43) rotate(16)"/>
+          <use href="#dr-drone" transform="translate(108 28) rotate(6)"/>
+          <use href="#dr-drone" transform="translate(304 38) rotate(-14)"/>
+          <path d="M0 86l18-6 12 5 20-4 14 6 22-5 16 6 24-4 18 5 26-6 20 6 22-5 26 5 20-4 24 6v9H0z" fill="#101720"/>
+          <g fill="#ff4f38"><circle cx="38" cy="81" r="2.6"/><circle cx="286" cy="83" r="2.6"/></g>
+          <g>
+            <path d="M6 7h308l-9 9 9 9H6l9-9z" fill="#0a111b" opacity=".55" transform="translate(0 2)"/>
+            <path d="M6 5h308l-9 9 9 9H6l9-9z" fill="#a71f24"/>
+            <path d="M6 5h308l-9 9 9 9H6l9-9z" fill="none" stroke="#f0c982" stroke-width="1"/>
+            <path d="M15 22h290" stroke="#701419" stroke-width="1.6"/>
+            <text x="160" y="17.8" fill="#3a0e10" opacity=".6" font-size="16" font-weight="700" text-anchor="middle" letter-spacing="1.1" transform="translate(.7 .7)">186 DRONES</text>
+            <text x="160" y="17" fill="#fff3d6" font-size="16" font-weight="700" text-anchor="middle" letter-spacing="1.1">186 DRONES</text>
+          </g>
         </svg>
       </div>
       <div class="lead-body">
@@ -340,32 +449,73 @@
     <article class="lead">
       <div class="lead-art">
         <svg viewBox="0 0 320 94" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
-          <rect width="320" height="94" fill="#275b73"/>
-          <rect width="320" height="24" fill="#a71f24"/>
-          <text x="160" y="17" fill="#fff8ea" font-size="16" font-weight="700" text-anchor="middle" letter-spacing="1.1">CLAIM vs DENIAL</text>
-          <circle cx="28" cy="34" r="10" fill="#f0cd88"/>
-          <path d="M0 60c52-7 95 5 142-1 48-6 99-8 178 3v32H0z" fill="#1d4f68"/>
-          <path d="M0 75c52-6 95 5 142 0 48-6 99-7 178 2" fill="none" stroke="#8fb2be" stroke-width="1.8"/>
-          <g transform="translate(20 31)">
-            <path d="M0 16l62-3 21 5-21 5L0 20l16 10-4 3-16-9z" fill="#e7e5da" stroke="#101a1d" stroke-width="1.6"/>
-            <path d="M27 15L38 0h7l-8 15z" fill="#aab5b3" stroke="#101a1d" stroke-width="1.3"/>
-            <path d="M14 22L2 32l4 2 15-9z" fill="#aab5b3" stroke="#101a1d" stroke-width="1.3"/>
-            <circle cx="65" cy="18" r="2" fill="#a71f24"/>
+          <defs>
+            <linearGradient id="gulf-sky" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#eaa052"/>
+              <stop offset=".48" stop-color="#b3704d"/>
+              <stop offset="1" stop-color="#1c4d66"/>
+            </linearGradient>
+            <radialGradient id="gulf-sun" cx=".18" cy=".72" r=".55">
+              <stop offset="0" stop-color="#ffe0a0" stop-opacity=".9"/>
+              <stop offset="1" stop-color="#ffe0a0" stop-opacity="0"/>
+            </radialGradient>
+            <linearGradient id="gulf-sea" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#2f687b"/>
+              <stop offset="1" stop-color="#102d3c"/>
+            </linearGradient>
+            <pattern id="gulf-grain" width="6" height="6" patternUnits="userSpaceOnUse">
+              <circle cx="1.2" cy="1.2" r=".7" fill="#fff0cb" opacity=".16"/>
+              <circle cx="4.8" cy="4.8" r=".6" fill="#0b2633" opacity=".16"/>
+            </pattern>
+          </defs>
+          <rect width="320" height="94" fill="url(#gulf-sky)"/>
+          <rect width="320" height="94" fill="url(#gulf-grain)"/>
+          <ellipse cx="44" cy="62" rx="76" ry="44" fill="url(#gulf-sun)"/>
+          <g fill="none" stroke-linecap="round" opacity=".35">
+            <path d="M-8 37q34-9 66 0t68-4" stroke="#ffe3b4" stroke-width="5"/>
+            <path d="M196 32q42-11 84 0t54-3" stroke="#a5c8c6" stroke-width="5"/>
           </g>
-          <text x="18" y="29" fill="#fff3d9" font-size="10.5" font-weight="700">F-16</text>
-          <path d="M96 42q35-23 72-6" fill="none" stroke="#f0b04b" stroke-width="2.2" stroke-dasharray="5 4"/>
-          <g stroke="#101a1d" stroke-width="1.6">
-            <path d="M92 70h160l-16 17H112z" fill="#4a5d64"/>
-            <rect x="118" y="55" width="100" height="15" fill="#dfe4dc"/>
-            <rect x="126" y="47" width="28" height="8" fill="#b9c9c7"/>
-            <rect x="164" y="47" width="28" height="8" fill="#b9c9c7"/>
-            <rect x="104" y="70" width="18" height="5" fill="#a71f24"/>
-            <line x1="198" y1="47" x2="198" y2="36"/>
+          <path d="M0 61q60-8 120 0t200-4v37H0z" fill="url(#gulf-sea)"/>
+          <path d="M0 61q60-8 120 0t200-4" fill="none" stroke="#d1b58c" stroke-width="1.6" opacity=".75"/>
+          <path d="M161 24l-13 70" stroke="#f5e6c6" stroke-width="1.6" stroke-dasharray="7 5" opacity=".6"/>
+          <g fill="none" stroke="#ffe1ae" stroke-width="2" stroke-dasharray="5 4" opacity=".9">
+            <path d="M4 55q32-16 68-14"/>
           </g>
-          <rect x="244" y="29" width="68" height="45" fill="#f7efdd" stroke="#8c8476" stroke-width="1"/>
-          <path d="M252 39q20 12 13 24t29 11q15-2 16-15" fill="none" stroke="#7f9fac" stroke-width="4"/>
-          <circle cx="281" cy="58" r="3" fill="#a71f24"/>
-          <text x="278" y="70" fill="#7d2a2c" font-size="10.5" font-weight="700" text-anchor="middle">BAHRAIN</text>
+          <g transform="translate(16 32) rotate(-7)">
+            <path d="M0 20l62-6 28 4-28 5L0 26l16 10-5 3-16-9z" fill="#ece8dc" stroke="#142229" stroke-width="1.5"/>
+            <path d="M29 17L41 0h8l-10 17z" fill="#a8b9b8" stroke="#142229" stroke-width="1.3"/>
+            <path d="M13 27L0 38l5 2 15-10z" fill="#a8b9b8" stroke="#142229" stroke-width="1.3"/>
+            <path d="M18 21h36" stroke="#a71f24" stroke-width="2.2"/>
+            <path d="M66 18l20-3" stroke="#a71f24" stroke-width="2.2"/>
+            <circle cx="88" cy="15" r="2.4" fill="#ffdca2"/>
+          </g>
+          <path d="M90 42q40-24 84-3" fill="none" stroke="#f6c46f" stroke-width="2.4" stroke-dasharray="6 5"/>
+          <text x="136" y="43" fill="#fff3d6" stroke="#3a221b" stroke-width="2.4" paint-order="stroke" font-size="15" font-weight="700" text-anchor="middle">?</text>
+          <g transform="translate(184 40)">
+            <path d="M0 29h124l-16 17H18z" fill="#4c646c" stroke="#102029" stroke-width="1.7"/>
+            <path d="M16 13h92v16H16z" fill="#e0e6dc" stroke="#102029" stroke-width="1.5"/>
+            <rect x="26" y="6" width="28" height="7" fill="#aebfbd" stroke="#102029" stroke-width="1.2"/>
+            <rect x="70" y="6" width="28" height="7" fill="#aebfbd" stroke="#102029" stroke-width="1.2"/>
+            <path d="M42 29v-9a11 11 0 0 1 22 0v9" fill="none" stroke="#d3ded8" stroke-width="2.2"/>
+            <path d="M108 13V4" stroke="#102029" stroke-width="1.7"/>
+            <path d="M108 4l17 3-17 3z" fill="#a71f24"/>
+            <circle cx="112" cy="21" r="3" fill="#a71f24"/>
+          </g>
+          <path d="M270 28a36 36 0 0 1 21 32" fill="none" stroke="#f0d6a1" stroke-width="1.7" opacity=".9"/>
+          <g fill="none" stroke="#a9cbcc" stroke-width="1.7" stroke-linecap="round" opacity=".8">
+            <path d="M6 75q18-7 36 0t36 0"/>
+            <path d="M96 82q18-6 34 0t34 0"/>
+            <path d="M178 78q18-7 36 0t36 0"/>
+            <path d="M256 84q18-6 34 0t34 0"/>
+          </g>
+          <g>
+            <path d="M6 7h308l-9 9 9 9H6l9-9z" fill="#0c2731" opacity=".55" transform="translate(0 2)"/>
+            <path d="M6 5h308l-9 9 9 9H6l9-9z" fill="#a71f24"/>
+            <path d="M6 5h308l-9 9 9 9H6l9-9z" fill="none" stroke="#f0c982" stroke-width="1"/>
+            <path d="M15 22h290" stroke="#701419" stroke-width="1.6"/>
+            <text x="160" y="17.8" fill="#3a0e10" opacity=".6" font-size="16" font-weight="700" text-anchor="middle" letter-spacing="1.1" transform="translate(.7 .7)">CLAIM vs DENIAL</text>
+            <text x="160" y="17" fill="#fff3d6" font-size="16" font-weight="700" text-anchor="middle" letter-spacing="1.1">CLAIM vs DENIAL</text>
+          </g>
         </svg>
       </div>
       <div class="lead-body">
@@ -411,7 +561,7 @@
       <div class="card-body">
         <div class="kicker"><span class="num">5</span> LAS VEGAS · F1 <span class="status reported">REPORTED</span></div>
         <h3>Verstappen wins in Vegas</h3>
-        <p>Norris 2nd, Piastri 3rd; 35 lead changes (AP).</p>
+        <p>Chaotic race: Norris 2nd, Piastri 3rd; 35 lead changes (AP).</p>
       </div>
     </article>
 
@@ -430,8 +580,8 @@
       </svg>
       <div class="card-body">
         <div class="kicker"><span class="num">6</span> WELLINGTON · CRICKET <span class="status reported">REPORTED</span></div>
-        <h3>India declare 720/9, a NZ record</h3>
-        <p>Rahul 136, Pant 128; NZ 119/2 (The Hindu).</p>
+        <h3>India declare 720/9 in Wellington</h3>
+        <p>Highest Test total in NZ; Pant 128; NZ 119/2, trail by 233 at stumps day 4 (The Hindu).</p>
       </div>
     </article>
 
