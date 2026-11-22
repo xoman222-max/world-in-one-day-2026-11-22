@@ -31,7 +31,7 @@
     height: 1024px;
     padding: 20px;
     display: grid;
-    grid-template-rows: 104px 46px 26px 232px 200px 24px 16px 256px 16px;
+    grid-template-rows: 104px 42px 20px 220px 200px 20px 16px 225px 49px 16px;
     gap: 8px;
     overflow: hidden;
     background:
@@ -39,9 +39,7 @@
       var(--paper);
   }
   .masthead {
-    display: grid;
-    grid-template-columns: 1fr 320px;
-    gap: 14px;
+    display: block;
     border-bottom: 4px double var(--ink);
     padding-bottom: 2px;
     overflow: hidden;
@@ -49,11 +47,11 @@
   .mast-top { display: flex; justify-content: space-between; align-items: baseline; height: 18px; }
   .logo { font-family: "Oswald", sans-serif; font-size: 19px; font-weight: 700; letter-spacing: 2.3px; line-height: 1; }
   .edition { font-family: "Oswald", sans-serif; font-size: 10.5px; font-weight: 600; letter-spacing: 1px; color: var(--muted); }
-  .date { font-family: "Playfair Display", Georgia, serif; font-size: 40px; font-weight: 700; letter-spacing: -1.1px; line-height: 1; margin: 2px 0 4px; }
-  .deck { font-size: 13px; font-weight: 700; line-height: 16px; color: #8c171c; }
-  .datecheck { border-left: 3px solid var(--red); padding: 2px 0 0 10px; overflow: hidden; }
-  .datecheck h2 { font-family: "Oswald", sans-serif; font-size: 10.5px; font-weight: 700; letter-spacing: 1.1px; color: var(--red); margin: 0 0 3px; }
-  .datecheck p { font-size: 10.6px; font-weight: 600; line-height: 12.6px; margin: 0; color: #29251f; }
+  .date { font-family: "Playfair Display", Georgia, serif; font-size: 64px; font-weight: 700; letter-spacing: -2px; line-height: 1; margin: 0 0 2px; }
+  .deck { font-size: 13px; font-weight: 700; line-height: 14px; color: #8c171c; }
+  .datecheck { border: 2px solid var(--ink); border-left: 6px solid var(--red); background: rgba(255,250,239,.72); padding: 2px 8px; overflow: hidden; }
+  .datecheck h2 { font-family: "Oswald", sans-serif; font-size: 10.5px; font-weight: 700; letter-spacing: 1.1px; color: var(--red); margin: 0 0 1px; }
+  .datecheck p { font-size: 10.5px; font-weight: 600; line-height: 12px; margin: 0; color: #29251f; }
 
   .numbers { display: grid; grid-template-columns: repeat(6, 1fr); gap: 7px; }
   .stat {
@@ -199,7 +197,7 @@
   .panel-head { display: flex; align-items: center; gap: 8px; font-family: "Playfair Display", Georgia, serif; font-size: 15px; font-weight: 700; line-height: 18px; margin-bottom: 3px; white-space: nowrap; min-width: 0; }
   .panel-head::after { content: ""; flex: 1; height: 3px; background: var(--red); }
   .panel-head span { font-family: "Oswald", sans-serif; font-size: 10.5px; font-weight: 700; letter-spacing: .5px; color: #352f27; }
-  .map-wrap { width: 100%; height: 228px; background: #faf4e7; overflow: hidden; }
+  .map-wrap { width: 100%; height: 199px; background: #faf4e7; overflow: hidden; }
   .map-wrap svg { display: block; width: 100%; height: 100%; }
   .land { fill: url(#map-land); stroke: #a98c63; stroke-width: 1.2; filter: url(#map-shadow); }
   .gridline { stroke: #ddd0b8; stroke-width: .8; }
@@ -253,10 +251,6 @@
       <div class="date">Sunday 22 November 2026</div>
       <div class="deck">COP31 plenary, no deal yet · 186 drones over Ukraine · F-16 claim denied</div>
     </div>
-    <aside class="datecheck">
-      <h2>DATE CHECK · UTC</h2>
-      <p>Wires read to about 10:40 UTC, Sun 22 Nov 2026. COP31 still no deal: 10:26 fourth draft (12 pp, ~100 paras) omits "fossil fuels"; 10:35 plenary still on procedure. Germany rejects as stands. Excluded: Maluku M7.2 (Sat 21), Bahrain strike, Kryvyi Rih missile (Sat). NBA = Sat night, reported Sun.</p>
-    </aside>
   </header>
 
   <section class="numbers" aria-label="The day in numbers">
@@ -806,10 +800,10 @@
 
   <section class="regions" aria-label="Region coverage">
     <div class="region" style="--c: var(--eu)"><i></i>EUROPE <b>9</b></div>
-    <div class="region" style="--c: var(--me)"><i></i>MIDDLE EAST <b>12</b></div>
-    <div class="region" style="--c: var(--ap)"><i></i>ASIA-PACIFIC <b>7</b></div>
-    <div class="region" style="--c: var(--am)"><i></i>AMERICAS <b>5</b></div>
-    <div class="region" style="--c: var(--af)"><i></i>AFRICA <b>2</b></div>
+    <div class="region" style="--c: var(--me)"><i></i>MIDDLE EAST <b>11</b></div>
+    <div class="region" style="--c: var(--ap)"><i></i>ASIA-PACIFIC <b>6</b></div>
+    <div class="region" style="--c: var(--am)"><i></i>AMERICAS <b>6</b></div>
+    <div class="region" style="--c: var(--af)"><i></i>AFRICA <b>3</b></div>
     <div class="region" style="--c: var(--gl)"><i></i>GLOBAL <b>1</b></div>
   </section>
 
@@ -867,9 +861,9 @@
           <g class="pin" transform="translate(222 62)"><circle r="6.5"/><text>12</text></g>
           <g class="pin" transform="translate(174 35)"><circle r="6.5"/><text>13</text></g>
           <g class="pin" transform="translate(265 68)"><circle r="6.5"/><text>14</text></g>
-          <g class="pin" transform="translate(250 112)"><circle r="6.5"/><text>15</text></g>
+          <g class="pin" transform="translate(214 116)"><circle r="6.5"/><text>15</text></g>
           <g class="pin" transform="translate(72 45)"><circle r="6.5"/><text>16</text></g>
-          <g class="pin" transform="translate(382 40)"><circle r="6.5"/><text>17</text></g>
+          <g class="pin" transform="translate(128 132)"><circle r="6.5"/><text>17</text></g>
           <g class="pin" transform="translate(150 12)"><circle r="6.5"/><text>18</text></g>
           <g class="pin" transform="translate(210 74)"><circle r="6.5"/><text>19</text></g>
           <g class="pin" transform="translate(245 92)"><circle r="6.5"/><text>20</text></g>
@@ -900,9 +894,9 @@
           <li><span class="num">12</span><b>LEBANON</b><span>UNIFIL starts army handover by 31 Dec (UNIFIL).</span></li>
           <li><span class="num">13</span><b>BELGIUM</b><span>skeyes: no normal ATC Mon 07:00–21:00 (Xinhua).</span></li>
           <li><span class="num">14</span><b>IRAQ</b><span>Hartha fire near Basra: 4 dead, 35 hurt (local reports).</span></li>
-          <li><span class="num">15</span><b>SAUDI</b><span>Coalition: Mecca-bound missile down (coalition).</span></li>
+          <li><span class="num">15</span><b>KENYA</b><span>Murkomen warns off anti-IEBC protests (The Star).</span></li>
           <li><span class="num">16</span><b>US</b><span>Trump wants a "permanent" Iran deal (Reuters).</span></li>
-          <li><span class="num">17</span><b>JAPAN</b><span>47,000 sign anti-sub petition (organisers).</span></li>
+          <li><span class="num">17</span><b>BRAZIL</b><span>Bolsonaro ICU d3: obstruction, stable (CNN Brasil).</span></li>
           <li><span class="num">18</span><b>SPACE</b><span>BepiColombo reaches Mercury orbit (ESA/JAXA).</span></li>
           <li><span class="num">19</span><b>SERBIA</b><span>Students' List wants chiefs out (Ilke/AA).</span></li>
           <li><span class="num">20</span><b>ISRAEL–US</b><span>Ch.13: joint Iran plans (Anadolu).</span></li>
@@ -929,8 +923,13 @@
     </div>
   </section>
 
+  <section class="datecheck">
+    <h2>DATE CHECK — READ THIS FIRST</h2>
+    <p>Wires read to about 10:40 UTC, Sun 22 Nov 2026. COP31 still no deal: 10:26 fourth draft (12 pp, ~100 paras) omits "fossil fuels"; 10:35 plenary still on procedure. Germany rejects as stands. Excluded: Maluku M7.2 (Sat 21), Bahrain strike, Kryvyi Rih missile (Sat). NBA = Sat night, reported Sun.</p>
+  </section>
+
   <footer class="sources">
-    <b>SOURCES&nbsp;</b>Reuters · AP · BBC · BBC Sport · Al Jazeera · Kyiv Independent · Yonhap · The Hindu · Anadolu · Xinhua · info.gov.hk · Guardian · ICC · WION · Ilke · CNN · Ch.13 · France24 · The National · al-Masirah · Clay Institute
+    <b>SOURCES&nbsp;</b>Reuters · AP · BBC · BBC Sport · Al Jazeera · Kyiv Independent · Yonhap · The Hindu · Anadolu · Xinhua · info.gov.hk · Guardian · ICC · WION · CNN · Ch.13 · France24 · al-Masirah · Clay Institute · The Star · CNN Brasil
   </footer>
 
 </div>
